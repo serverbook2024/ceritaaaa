@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drama Books</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      body {
+        background: linear-gradient(
+          50deg,
+          #00007b,
+          #14149b,
+          #1d1db6,
+          #2d2dd0,
+          #3939e1,
+          #4a4af1,
+          #5b5bff,
+          #6f6fff,
+          #8282ff,
+          #9494ff,
+          #aaaaff,
+          #bfbfff,
+          #ccccff,
+          #d9d9ff,
+          #ebebff,
+          #f7f7ff,
+          #ebebff,
+          #d9d9ff,
+          #ccccff,
+          #bfbfff,
+          #aaaaff,
+          #9494ff,
+          #8282ff,
+          #6f6fff,
+          #5b5bff,
+          #4a4af1,
+          #3939e1,
+          #2d2dd0,
+          #1d1db6,
+          #14149b,
+          #00007b
+        );
+        color: white;
+        background-size: cover;
+        background-position: center;
+      }
+      .back-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .action-title {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .container {
+        margin-top: 2%;
+      }
+      .book-row {
+        margin-bottom: 20px;
+      }
+      .book-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 240px;
+      }
+      .book-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .book-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* Default: 6 equal columns */
+        gap: 20px;
+        justify-content: center;
+      }
+
+      @media (max-width: 1200px) {
+        .book-container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .book-container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .book-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .book-container {
+          grid-template-columns: 1fr;
+          justify-items: center;
+        }
+
+        .book-card {
+          width: 45%;
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back-icon" onclick="window.location.href='homepage.html'">
+      <i class="bi bi-arrow-left-circle"></i>
+    </div>
+
+    <div class="action-title">
+      <h1>Drama</h1>
+      <p>Huft, siapa yang iris bawang disini... :’(</p>
+    </div>
+
+    <div class="container">
+      <div class="book-container">
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://m.media-amazon.com/images/I/618hM0noYAL._SL1164_.jpg"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img
+              src="https://www.thoughtco.com/thmb/Rkq_B79oA-by2fuUvO1qPMwxSxQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9781741758054-594890765f9b58d58a7786b7.jpg"
+              alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img
+              src="https://i.ibb.co.com/BycrN7Z/image.png"
+              alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://i.ibb.co.com/6w7m3Wr/image.png"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book5.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/WhatsApp_Image_2021-05-24_at_17.25.44.jpeg"
+              alt="Book 5"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book6.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/heartbreak_motel_cov_a2uK3fK.jpg"
+              alt="Book 6"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/551000349_serangkai.png"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img src="https://cdn.gramedia.com/uploads/picture_meta/2023/4/1/9n7hoatkffndxdtbppb2fm.jpg" alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img src="https://cdn.gramedia.com/uploads/items/Hilmy_Milan.jpg" alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1640765947i/59966545.jpg" alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img src="https://ebooks.gramedia.com/ebook-covers/10084/image_highres/GPU_SDRHD2019MTH03SDRHD9.jpg" alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img src="https://cdn.gramedia.com/uploads/items/9786020324784_Hujan-Cover-Baru-2018.jpg" alt="Book 4"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

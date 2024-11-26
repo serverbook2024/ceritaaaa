@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komedi Books</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      body {
+        background: linear-gradient(
+          50deg,
+          #eaffea,
+          #d9ffd9,
+          #c0ffc0,
+          #a6ffa6,
+          #8cff8c,
+          #66ff66,
+          #45e645,
+          #33d333,
+          #29c029,
+          #1fa01f,
+          #1c801c,
+          #1a661a,
+          #1c801c,
+          #1fa01f,
+          #29c029,
+          #33d333,
+          #45e645,
+          #66ff66,
+          #8cff8c,
+          #a6ffa6,
+          #c0ffc0,
+          #d9ffd9,
+          #eaffea
+        );
+
+        color: white;
+        background-size: cover;
+        background-position: center;
+      }
+      .back-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .action-title {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .container {
+        margin-top: 2%;
+      }
+      .book-row {
+        margin-bottom: 20px;
+      }
+      .book-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 240px;
+      }
+      .book-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .book-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* Default: 6 equal columns */
+        gap: 20px;
+        justify-content: center;
+      }
+
+      @media (max-width: 1200px) {
+        .book-container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .book-container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .book-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .book-container {
+          grid-template-columns: 1fr;
+          justify-items: center;
+        }
+
+        .book-card {
+          width: 45%;
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back-icon" onclick="window.location.href='homepage.html'">
+      <i class="bi bi-arrow-left-circle"></i>
+    </div>
+
+    <div class="action-title">
+      <h1>Komedi</h1>
+      <p>HAHAHA HIHIHI HEHEHE</p>
+    </div>
+
+    <div class="container">
+      <div class="book-container">
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://online.fliphtml5.com/ccwxt/tvtn/files/large/1.webp?1642132194&1642132194"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9789797808952C_9789797808952.jpg"
+              alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1487061334i/18777569.jpg" alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490323010i/3029362.jpg" alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book5.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9789797808983_Manusia-Seten.jpg"
+              alt="Book 5"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book6.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9789797808969C_9789797808969.jpg"
+              alt="Book 6"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://m.media-amazon.com/images/I/81KT-CRkI6L._AC_UF1000,1000_QL80_.jpg"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img
+              src="https://ebooks.gramedia.com/ebook-covers/79862/image_highres/BLK_PSOL2022769611.jpg"
+              alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img
+              src="https://bukune.com/wp-content/uploads/2012/12/Cado_Cado_3-206x282.gif"
+              alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://bukukita.com/babacms/displaybuku/109688_f.jpg"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://bukukita.com/babacms/displaybuku/97642_f.jpg"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://down-id.img.susercontent.com/file/id-11134207-7qukx-li16do2fonft53"
+              alt="Book 4"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

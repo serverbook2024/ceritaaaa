@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romansa Books</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      body {
+        background: linear-gradient(
+          50deg,
+          #4b0082,
+          #5c0d91,
+          #6d1aa0,
+          #7e27af,
+          #8f35be,
+          #a043cd,
+          #b152dc,
+          #c260eb,
+          #d36efa,
+          #e47eff,
+          #e58aff,
+          #e996ff,
+          #eda3ff,
+          #f1afff,
+          #f4bbff,
+          #f8c8ff,
+          #f4bbff,
+          #f1afff,
+          #eda3ff,
+          #e996ff,
+          #e58aff,
+          #e47eff,
+          #d36efa,
+          #c260eb,
+          #b152dc,
+          #a043cd,
+          #8f35be,
+          #7e27af,
+          #6d1aa0,
+          #5c0d91,
+          #4b0082
+        );
+        color: white;
+        background-size: cover;
+        background-position: center;
+      }
+      .back-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .action-title {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .container {
+        margin-top: 2%;
+      }
+      .book-row {
+        margin-bottom: 20px;
+      }
+      .book-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 240px;
+      }
+      .book-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .book-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* Default: 6 equal columns */
+        gap: 20px;
+        justify-content: center;
+      }
+
+      @media (max-width: 1200px) {
+        .book-container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .book-container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .book-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .book-container {
+          grid-template-columns: 1fr;
+          justify-items: center;
+        }
+
+        .book-card {
+          width: 45%;
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back-icon" onclick="window.location.href='homepage.html'">
+      <i class="bi bi-arrow-left-circle"></i>
+    </div>
+
+    <div class="action-title">
+      <h1>Romansa</h1>
+      <p>Cie-cie~ permainan lu kebaca, boy!</p>
+    </div>
+
+    <div class="container">
+      <div class="book-container">
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9786020630168.jpg"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9786020655680_Winter_in_Tokyo_cov.jpg"
+              alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/Mismatch_cov.jpg"
+              alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9786020656113_Must_Be_a_Happy_Ending_2_cov.jpg"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book5.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9786026716897.jpg"
+              alt="Book 5"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book6.html"
+            ><img
+              src="https://i.ibb.co.com/zNKMpSn/image003-11.jpg"
+              alt="Book 6"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://i.ibb.co.com/r3Sqd8T/image005-8.jpg"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img
+              src="https://i.ibb.co.com/1LkCzCC/image.png"
+              alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img
+              src="https://i.ibb.co.com/LtpxdXS/image.png"
+              alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://i.ibb.co.com/3rGHTvk/image.png"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://i.ibb.co.com/cQ3CJnh/image.png"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://leksikabookstore.com/uploads/63c11a2538ee9_20230113154525-1.jpg"
+              alt="Book 4"
+          /></a>
+        </div>
+        
+
+        
+
+      </div>
+      
+    </div>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
