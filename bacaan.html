@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bacaan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #041185;
+        color: white;
+        margin: 25px;
+      }
+      header {
+        display: flex;
+        font-family: Arial, sans-serif;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: transparent;
+        position: relative;
+      }
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+        text-shadow: 1px 3px 4px #00000086;
+      }
+      .nav-links a.active {
+        font-weight: bold;
+      }
+      .header h1 {
+        display: inline-block;
+        background: linear-gradient(to right, #ff7e5f, #ffb88c);
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 36px;
+        color: white;
+        margin: 0;
+      }
+      .book-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+        padding: 10px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+      .book-item img {
+        width: 14vw;
+        height: auto;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="bacaan.html"><img src="images/hading.png" alt="Bacaan" /></a>
+      <nav class="nav-links">
+        <a href="homepage.html">Beranda</a>
+        <a class="active" href="bacaan.html">Bacaan</a>
+        <a href="menurutmu.html">Kata Mereka</a>
+        <a href="homepage.html #tentang-kita">Tentang Kita</a>
+      </nav>
+    </header>
+
+    <!-- Book Grid -->
+    <div class="book-grid">
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of '172 Days'" src="images/172-Days.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Hello'" src="images/Hello.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Pulang'" src="images/Pulang.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Si Anak Pelangi'" src="images/Si-Anak-Pelangi.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Kita Pergi Hari Ini'" src="images/Kita-Pergi-Hari-Ini.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Mari Pergi Lebih Jauh'" src="images/Mari-Pergi-Lebih-Jauh.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Hujan'" src="images/Hujan.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="laskar-pelangi.html"><img alt="Book cover of 'Laskar Pelangi'" src="images/Laskar-Pelangi.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Angkasa'" src="images/Angkasa.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#">
+          <img alt="Book cover of 'Seperti Dendam'" src="images/Seperti-Dendam.png" />
+        </a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Re: Perempuan'" src="images/Perempuan.png" /></a>
+      </div>
+      <div class="book-item">
+        <a href="#"><img alt="Book cover of 'Home Sweet Loan'" src="images/Home-Sweet-Loan.png" /></a>
+      </div>
+    </div>
+  </body>
+</html>

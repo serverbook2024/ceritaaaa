@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action Books</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100%; /* Ensures the body and html take up the full height */
+        margin: 0; /* Remove any default margin */
+        overflow-x: hidden;
+      }
+      body {
+        background: linear-gradient(
+          50deg,
+          #7b0000,
+          #9b1414,
+          #b61d1d,
+          #d02d2d,
+          #e13939,
+          #f14a4a,
+          #ff5b5b,
+          #ff6f6f,
+          #ff8282,
+          #ff9494,
+          #ffaaaa,
+          #ffbfbf,
+          #ffcccc,
+          #ffd9d9,
+          #ffebeb,
+          #fff7f7,
+          #ffebeb,
+          #ffd9d9,
+          #ffcccc,
+          #ffbfbf,
+          #ffaaaa,
+          #ff9494,
+          #ff8282,
+          #ff6f6f,
+          #ff5b5b,
+          #f14a4a,
+          #e13939,
+          #d02d2d,
+          #b61d1d,
+          #9b1414,
+          #7b0000
+        );
+        color: white;
+        background-size: cover; /* Ensures the background covers the entire body */
+        background-position: center; /* Keeps the gradient centered */
+      }
+      .back-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .action-title {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .container {
+        margin-top: 2%;
+      }
+      .book-row {
+        margin-bottom: 20px;
+      }
+      .book-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 400px; /* Fix the height */
+        display: flex;
+        justify-content: center; /* Centers the card's content */
+        flex-grow: 1; /* Allow card to grow and fill available space */
+        min-width: 240px; /* Minimum width to avoid too narrow cards */
+      }
+      .book-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the entire area of the card */
+      }
+      /* Custom grid for book cards */
+      .book-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* Default: 6 equal columns */
+        gap: 20px;
+        justify-content: center;
+      }
+
+      /* Make the grid responsive with Bootstrap */
+      /* Medium Screens: 5 columns */
+      @media (max-width: 1200px) {
+        .book-container {
+          grid-template-columns: repeat(
+            5,
+            1fr
+          ); /* 5 columns on medium screens */
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the entire area of the card */
+        }
+      }
+
+      /* Small Screens: 4 columns */
+      @media (max-width: 992px) {
+        .book-container {
+          grid-template-columns: repeat(
+            4,
+            1fr
+          ); /* 4 columns on small screens */
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the entire area of the card */
+        }
+      }
+
+      /* Extra-Small Screens: 3 columns */
+      @media (max-width: 768px) {
+        .book-container {
+          grid-template-columns: repeat(
+            3,
+            1fr
+          ); /* 3 columns on extra-small screens */
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the entire area of the card */
+        }
+      }
+
+      /* Very Small Screens: 2 columns */
+      @media (max-width: 576px) {
+        .book-container {
+          grid-template-columns: 1fr; /* 1 column on very small screens */
+          justify-items: center; /* Centers the grid items horizontally */
+        }
+
+        .book-card {
+          width: 45%; /* Adjust the width of the card */
+        }
+
+        .book-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the entire area of the card */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Back Icon -->
+    <div class="back-icon" onclick="window.location.href='homepage.html'">
+      <i class="bi bi-arrow-left-circle"></i>
+    </div>
+
+    <!-- Title Section -->
+    <div class="action-title">
+      <h1>Action</h1>
+      <p>*gedebak* *gedebuk* *gedebak* *gedebuk*</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+      <div class="book-container">
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/Saha_Mansion_cov.jpg"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9786020653785_pasukan_buzzer_cov.jpg"
+              alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9786020658001_Happiness_battle_cov.jpg"
+              alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786020622569_Anak-Teladan-The-Good-Son.jpg"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book5.html"
+            ><img
+              src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786020646602_7_Tahun_Kegelapan_C_1_4_R1-1_DEPAN.jpg"
+              alt="Book 5"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book6.html"
+            ><img
+              src="https://cdn.gramedia.com/uploads/items/9786020639550_catatan_harian_sang_pembunuh_cov.jpg"
+              alt="Book 6"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book1.html"
+            ><img
+              src="https://mpd-biblio-covers.imgix.net/9781509889365.jpg"
+              alt="Book 1"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book2.html"
+            ><img
+              src="https://m.media-amazon.com/images/I/81nbYOQhq8L._AC_UF1000,1000_QL80_.jpg"
+              alt="Book 2"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book3.html"
+            ><img
+              src="https://m.media-amazon.com/images/I/81nHR8WExML._AC_UF894,1000_QL80_.jpg"
+              alt="Book 3"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book4.html"
+            ><img
+              src="https://m.media-amazon.com/images/I/812lW7klLdL._AC_UF1000,1000_QL80_.jpg"
+              alt="Book 4"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book5.html"
+            ><img
+              src="https://bukukita.com/babacms/displaybuku/86847_f.jpg"
+              alt="Book 5"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a href="book5.html"
+            ><img
+              src="https://ebooks.gramedia.com/ebook-covers/7996/big_covers/ID_MIZ2013MTH09TDVC_B.jpg"
+              alt="Book 5"
+          /></a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap Icons and JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
